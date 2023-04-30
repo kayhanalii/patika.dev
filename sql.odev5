@@ -1,0 +1,15 @@
+1-SELECT DISTINCT length FROM film 
+WHERE title LIKE '%n'
+order by length DESC 
+LIMIT 5;
+
+2-SELECT DISTINCT length FROM film 
+WHERE title LIKE '%n'
+order by length ASC
+OFFSET 5
+LIMIT 5;
+
+3-SELECT * FROM customer 
+WHERE store_id = 1
+ORDER BY last_name DESC
+limit 4;
