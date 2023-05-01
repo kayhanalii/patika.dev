@@ -1,0 +1,14 @@
+1-CREATE TABLE employee (
+    id SERIAL PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+    email VARCHAR(100),
+    birthday DATE
+);
+
+2-UPDATE employee
+SET name = 'ali',
+	birthday = '1999-05-12'
+WHERE id = 2;
+
+3-DELETE FROM employee
+WHERE name = 'ali';
